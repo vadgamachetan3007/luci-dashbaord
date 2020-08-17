@@ -1,0 +1,449 @@
+/********************************************************
+Slider Testimonial SCSS  
+/********************************************************/
+
+.slider-testimonial{
+    position: relative;
+    padding: 10px 0 60px 0;
+    margin: 0px auto;
+    text-align: center;
+    .carousel{
+            width: 530px;
+        margin: 0px auto;
+        box-shadow: 0px 17px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px 25px;
+        .carousel-item{
+            p{
+                margin-bottom: 10px;
+                text-align: left;
+                font-size: $font-size-primary;
+            }
+            .client-area {
+                height: 60px;
+                position: relative;
+                text-align: left;
+                padding-left: 70px;
+                padding-top: 2px;
+                font-size: 16px;
+                img{
+                    width: 55px;
+                    height: 55px;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                span{
+                    display: block;
+                }
+            }
+        }
+        .carousel-indicators {
+            left: auto;
+            margin-right: 5%;
+            align-items: center;
+            li{
+                border-radius: 20px !important;
+                width: 9px;
+                height: 9px;
+                border-top: none;
+                border-bottom: none;
+                background: #C7C8CA;
+                &.active{
+                    background: #343C4B;
+                     width: 13px;
+                     height: 13px;
+                }
+            }
+        }
+    }
+}
+
+/********************************************************
+Problem Question SCSS  
+/********************************************************/
+
+.problem-question{
+    padding: 60px 0;
+    .problem-area{
+        position: relative;
+        border-right: 2px solid #E3EDF2;
+        padding-right: 175px;
+        text-align: right;
+        h2{
+            font-size: 28px;
+            font-weight: 700;
+        }
+        img{
+            position: absolute;
+            right: 55px;
+            top: 10px;
+             width: 92px;
+            height: 92px;
+        }
+        p{
+            width: 95%;
+            display: inline-block;
+            font-size: $font-size-primary;
+        }
+    }
+    .question-area{
+        position: relative;
+        text-align: left;
+        padding-left: 150px;
+         h2{
+            font-size: 28px;
+            font-weight: 700;
+        }
+        img{
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            width: 92px;
+            height: 92px;
+        }
+        p{
+            width: 95%;
+            display: inline-block;
+            font-size: $font-size-primary;
+        }
+    }
+}
+
+/********************************************************
+How it works SCSS  
+/********************************************************/
+
+.how-it-works{
+    padding: 60px 0;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+    }
+    .hiw-left{
+        position: relative;
+        margin-top: 20px;
+        &:before{
+            position: absolute;
+            content: "";
+            background-image: url(../images/hiw-bg.svg);
+            height: 660px;
+            width: 645px;
+            top: 20px;
+            background-position: right top;
+            left: -115px;
+        }
+        .hl-img{
+            margin: 100px 0 0 -60px;
+            position: relative;
+        }
+    }
+    .hiw-right{
+        margin-top: 20px;
+        .hiw-points{
+            margin: 100px 0 0 30px;
+            .h-point {
+               padding: 0 70px 10px 70px;
+                position: relative;
+                margin-bottom: 30px;
+                .point-no{
+                   position: absolute;
+                    left: 0;
+                    top: -5px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    border: 1px solid #efebeb;
+                    border-radius: 25px;
+                    padding: 3px 0 0 0;
+                    height: 42px;
+                    width: 42px;
+                    text-align: center;
+                    &.active{
+                        background-image: linear-gradient(to right, #FF8C5A, #FF9458, #FFA655);
+                        color: $white-color;
+                    }
+                }
+                h3{
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: $font-size-primary;
+                }
+            }
+        }
+    }
+    .btn-area{
+        text-align: center;
+    }
+}
+
+.title-line{
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+/********************************************************
+Benifit SCSS  
+/********************************************************/
+
+.benefits-items{
+    padding: 80px 0;
+    margin: 80px 0;
+    background-color: #343C4B;
+    position: relative;
+    &:before{
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-image: url(../images/benifit/benifit-bg.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 514px;
+        width: 100%;
+        content: "";
+        opacity: 0.05;
+        top: 0;
+    }
+    h2{
+        color: $white-color;
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        font-weight: 700;
+        line-height: 1.3;
+        font-size: 40px;
+        span{
+            color: $secondary-text;
+        }
+    }
+    .denifits-item{
+        padding: 80px 0;
+        .d-item{
+            width: 24%;
+            text-align: center;
+            display: inline-block;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+            span{
+                display: block;
+                font-size: $font-size-primary;
+                margin-top: 20px;
+                color: $white-color;
+                font-weight: 500;
+            }
+            &.dc{
+                margin-left: 17%;
+                width: auto;
+                margin-top: 60px;
+            }
+            &.dc-a{
+                margin-left: 14%;
+            }
+            &.dc-b{
+                margin-left: 16%;
+            }
+        }
+    }
+}
+
+/********************************************************
+Alumni SCSS  
+/********************************************************/
+
+.alumni-area{
+    background-color: $white-color;
+    margin: 80px 0;
+    h2{
+        color: $primary-text;
+        text-align: center;
+        width: 55%;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        font-weight: 700;
+        line-height: 1.3;
+        font-size: 40px;
+    }
+    .alumni-item{
+        margin: 0px auto;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        img{
+            margin-left: 20px;
+            &:first-child{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+/********************************************************/
+/* Max-Width 1024PX     *********************************/
+/********************************************************/
+@media (max-width: 1024px) {
+    .hidden-md-down{
+        display: none;
+    }
+    .hiw-right-area{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        .hiw-right .hiw-points .h-point{
+            padding: 0 0 10px 70px;
+        }
+    }
+    .how-it-works {
+        h2{
+            text-align: left;
+        }
+        .title-line{
+            left: 15px;
+            right: auto;
+        }
+        .hiw-right{
+            padding-top: 20px;
+            .hiw-points{
+                margin: 0;
+                
+            }
+        }
+    }
+    .benefits-items{
+        .denifits-item{
+            padding: 40px 0;
+            .d-item{
+                &.dc{
+                    margin-left: 8%;
+                }
+                &.dc-a{
+                    margin-left: 12%;
+                }
+                &.dc-b{
+                    margin-left: 16%;
+                }
+            }
+        }
+    }
+    .alumni-area{
+        margin: 40px 0;
+        h2{
+            width: 80%;
+        }
+    }
+}
+
+/********************************************************/
+/* Max-Width 991PX     **********************************/
+/********************************************************/
+@media (max-width: 991px) {
+   
+    .problem-question {
+        .problem-area{
+            border-right: none;
+            padding-right: 0;
+            text-align: left;
+            padding-left: 75px;
+            margin-bottom: 30px;
+            img{
+                width: 50px;
+                height: 50px;
+                right: auto;
+                top: 10px;
+                width: 50px;
+                height: 50px;
+                left: 0;
+            }
+            p{
+                width: 100%;
+            }
+        }
+        .question-area{
+            padding-left: 75px;
+            img{
+                width: 50px;
+                height: 50px;
+                right: auto;
+                top: 10px;
+                width: 50px;
+                height: 50px;
+                left: 0;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/********************************************************/
+/* Max-Width 768PX     **********************************/
+/********************************************************/
+@media (max-width: 768px) {
+        .benefits-items{
+            padding: 40px 0;
+            margin: 40px 0;
+            h2{
+                font-size: 30px;
+                width: 100%;
+            }
+            .denifits-item{
+                padding: 40px 0 0 0;
+                .d-item{
+                    width: 100%;
+                    text-align: center;
+                    display: block;
+                    margin-bottom: 30px;
+                    &.dc{
+                        display: none;
+                    }
+                }
+            }
+    }
+    .alumni-area{
+        h2{
+            width: 100%;
+            line-height: 1.2;
+            font-size: 30px;
+        }
+        .alumni-item{
+            margin: 0px auto;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            flex-direction: column;
+            img{
+                display: block;
+                margin-left: 0;
+                margin: 0px auto;
+                margin-bottom: 20px;
+                &:first-child{
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+
+/********************************************************/
+/* Max-Width 576PX     **********************************/
+/********************************************************/
+@media (max-width: 576px) {
+    .slider-testimonial .carousel{
+        width: 90%;
+        min-width: auto;
+        margin: 0 5%;
+    }
+}

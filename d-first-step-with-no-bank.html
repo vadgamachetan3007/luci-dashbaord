@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <title>luci Smart Finance</title>
+      <!-- favicon icon --> 
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!--Bootstrap Link-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--Theme CSS-->
+      <link href="css/dashboard.css" rel="stylesheet" type="text/css" >
+      <!--Font CSS-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container-fluid bg-header">
+            <div class="row bg-c">
+               <div class="col">
+                  <nav class="navbar navbar-expand-lg navbar-light pt-4 pb-4">
+                     <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                     <img src="images/navbar-toggler-icon.svg">
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">How it works</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Support</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Your Results</a>
+                           </li>
+                            
+                        </ul>
+                     </div>
+                      <form class="form-inline my-2 my-lg-0 user-name btn-signup">
+                        <a class="nav-link" href="#"><span>Chetan Vadgama</span> <span class="short-name">CV</span></a>
+                     </form>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+       
+       <section>
+       <div class="wrapper profile-sidebar">
+                     <div id="sidebar" class="active ">
+                        <div class="left-side-area">
+                           <div class="sidebar-header">                             
+                               <a href="#" id="sidebarCollapse" class="btn-info-toggle">
+                              <i><img src="images/dashboard/arrow.svg"></i>
+                              <span></span>
+                              </a>
+                            </div>
+                         </div>
+           </div>
+           <div id="content">
+                         <div class="card mb-4 luci-card">
+                         <div class="card-body">
+                             <div class="luci-title">
+                             Accounts Shared with luci
+                             </div>
+                             
+                             <div class="luci-text w-50">
+                             Securely share how you spend your money using Plaid (a Visa company). luci will use the spending data from your selected accounts to create a personalized recommendation.
+                                 
+                                 <div class="text-left mt-4">
+                                  <button class="btn luci-btn dark-btn font-weight-bold pt-3 pb-3 mr-3" type="submit">Add Account</button>
+                                  <button class="btn luci-btn gray-btn font-weight-bold pt-3 pb-3" type="submit">Find Your Perfect Card</button>
+                                 </div>
+                                 
+                             </div>
+                             
+                             </div>
+               </div>
+           </div>
+           </div>
+       </section>
+   </body>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+          });
+          
+          
+       
+
+        
+      });
+   </script>
+</html>

@@ -1,0 +1,211 @@
+/********************************************************
+Variable SCSS for Variable Declaration
+/********************************************************/
+@import "_variable";
+
+/********************************************************
+Basic SCSS for Framework & Elements
+/********************************************************/
+@import "_basic";
+
+/********************************************************
+Header SCSS for Header Part 
+/********************************************************/
+@import "_header";
+
+/********************************************************
+Components SCSS for All Components Fields 
+/********************************************************/
+@import "_components";
+
+/********************************************************
+Animation SCSS for Animatate 
+/********************************************************/
+@import "_animation";
+
+
+header{
+    .bg-header{
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        position: sticky;
+    }
+    .navbar-light {
+        .navbar-nav .nav-link{
+            color: $primary-text;
+            &:hover{
+                color: $primary-text;
+            }
+             &:focus, &:active{
+                color: $primary-text;
+            }
+        }
+        .navbar-collapse{
+             .navbar-nav .nav-link{
+               &:hover{
+                color: $primary-text;
+            }
+                 &:focus, &:active{
+                    color: $primary-text;
+                } 
+            }
+        }
+        .user-name{
+            a{
+                display: flex;
+                align-items: center;
+                padding: 0 0 0 15px;
+            }
+            span{
+                display: block;
+                font-weight: 600;
+                color: $primary-text;
+            }
+            .short-name{
+                font-weight: 400;
+                display: block;
+                background: linear-gradient(90deg, #FF8C5A 7.91%, #FF9458 51.05%, #FFA655 94.63%);
+                box-shadow: 0px 10px 20px rgba(253,165,134,0.1);
+                border-radius: 100px;
+                width: 44px;
+                height: 44px;
+                text-align: center;
+                padding-top: 12px;
+                margin-left: 10px;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sidebar-header {
+  position: relative;
+}
+
+a#sidebarCollapse {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.profile-sidebar {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  #sidebar {
+    min-width: 350px;
+    max-width: 350px;
+    transition: all 0.3s;
+    margin-left: 0;
+    background: #F6FCFF;
+    border-right: 1px solid #E0E0E0;
+    height: 86.5vh;
+  }
+
+  #content {
+    width: 100%;
+    padding: 0 0 50px 0;
+    transition: all 0.3s;
+    padding: 60px 0 0 60px;
+      min-height: 200px;
+  }
+
+  #sidebar.active {
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+
+    a#sidebarCollapse {
+      right: 27px;
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.luci-card{
+    border: none;
+    .luci-text{
+        color: #333333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .luci-title{
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 42px;
+        color: #222222;
+        margin-bottom: 10px;
+    }
+}
+
+
+/********************************************************
+BUTTON  
+/********************************************************/
+
+.dark-btn{
+    background-color: #343C4B;
+    color: $white-color;
+    &:hover{
+       color: $white-color;
+       opacity: 0.8;    
+    }
+}
+
+.gray-btn{
+    background-color: rgba(147, 147, 147, 0.41);
+    color: #939393;
+    &:hover{
+       color: #939393;
+       opacity: 0.8;    
+    }
+}
+
+
+/********************************************************/
+/* Max-Width 767PX     *********************************/
+/********************************************************/
+@media (max-width: 767px) {
+    header {
+      .navbar-light .user-name .short-name {
+        width: 34px;
+        height: 34px;
+        padding-top: 7px;
+        font-size: 13px;
+      }
+
+      .bg-header {
+        .btn-signup {
+          right: 60px;
+          top: 15px;
+        }
+
+        .navbar-light {
+          padding: 10px 0 10px 10px !important;
+        }
+      }
+    }
+    
+    .profile-sidebar {
+      #sidebar {
+        min-width: 350px;
+        max-width: 350px;
+      }
+
+      #sidebar.active {
+        min-width: 60px;
+        max-width: 60px;
+
+        a#sidebarCollapse {
+          right: 8px;
+        }
+      }
+    }
+    .w-50{
+        width: 100% !important;
+    }
+}

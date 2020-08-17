@@ -1,0 +1,81 @@
+/********************************************************
+Footer SCSS  
+/********************************************************/
+
+footer{
+    background-color: #E3EDF2;
+    padding: 100px 0 50px 0;
+    .copyright-txt{
+        font-size: $font-size-default;
+        display: block;
+        margin: 15px 0 0 0;
+    }
+    h4{
+        color: $primary-text;
+        font-size: $font-size-primary;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+            padding: 0 0 5px 0;
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                color: #333333;
+                &:hover{
+                    text-decoration: none;
+                    color: #333333;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .social-links {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: start;
+        a{
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        img{
+            margin-right: 7px;
+            width: 24px;
+        }
+    }
+}
+
+/********************************************************/
+/* Max-Width 576PX     **********************************/
+/********************************************************/
+@media (max-width: 992px) {
+    footer{
+        padding: 50px 0 50px 0;
+        text-align: center;
+        .copyright{
+            order: 4;
+        }
+        .product{
+            order: 1;
+        }
+        .social{
+            margin: 20px 0;
+            order: 3;
+            .social-links{
+                margin: 0;
+                justify-content: center;
+            }
+        }
+        .links{
+            order: 2;
+        }
+        h4{
+            margin-bottom: 20px;
+            margin: 15px 0 10px 0;
+        }
+    }
+}

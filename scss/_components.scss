@@ -1,0 +1,129 @@
+/********************************************************
+BUTTON  
+/********************************************************/
+
+.primary-btn{
+    background-image: linear-gradient(to right, #FF8C5A , #FF9458, #FFA655);
+    color: $white-color;
+    &:hover{
+       color: $white-color;
+       opacity: 0.8;    
+    }
+}
+
+.luci-btn{
+    border: none;
+    border-radius: 25px;
+    font-size: $font-size-default;
+    padding: 12px 30px;
+    min-width: 175px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1);
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    &:hover{
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    &:active{
+         box-shadow: none;
+        outline: none;
+    }
+}
+
+.submit-btn{
+    height: 62px;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.google-btn{
+    img{
+        margin-right: 5px;
+    }
+    .luci-btn{
+        border: 2px solid #E9F0F4;
+        background: #ffffff;
+        height: 56px;
+        color: #333333;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+/********************************************************
+CHECK BOX
+/********************************************************/
+
+.custom-control{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.custom-control-input {
+  &:checked ~ .custom-control-label::before {
+    border-color: #FF8976;
+    background-color: #FF8976;
+  }
+
+  &:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+}
+
+
+/********************************************************
+TEXT COLOR
+/********************************************************/
+
+.p-text{
+    color: $primary-text !important;
+}
+
+.s-text{
+    color: $secondary-text !important;
+}
+
+.link-text{
+    color: $link-text !important;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+
+/********************************************************
+INPUT BOX
+/********************************************************/
+
+.form-group{
+    margin-bottom: 20px;
+    .luci-input{
+        width: 100%;
+        height: 50px;
+        background: $input-bg;
+        border: 1px solid $input-border;
+        box-sizing: border-box;
+        border-radius: 100px;
+        padding: 10px 5px 10px 20px;
+        min-width: 383px;
+        color: $input-text;
+    }
+    &.password-input{
+        position: relative;
+        .pwd-eye{
+            position: absolute;
+            right: 14px;
+            transform: translateY(50%);
+            margin-top: 7px;
+            &:hover{
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+    }
+}

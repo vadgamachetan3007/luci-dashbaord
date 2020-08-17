@@ -1,0 +1,130 @@
+/********************************************************
+Variable SCSS for Variable Declaration
+/********************************************************/
+@import "_variable";
+
+/********************************************************
+Basic SCSS for Framework & Elements
+/********************************************************/
+@import "_basic";
+
+/********************************************************
+Header SCSS for Header Part 
+/********************************************************/
+@import "_header";
+
+/********************************************************
+Banner SCSS for Header Part 
+/********************************************************/
+@import "_banner";
+
+/********************************************************
+Components SCSS for All Components Fields 
+/********************************************************/
+@import "_components";
+
+/********************************************************
+Footer SCSS for footer Part 
+/********************************************************/
+@import "_footer";
+
+/********************************************************
+Animation SCSS for Animatate 
+/********************************************************/
+@import "_animation";
+
+
+.informative-area{
+    padding-bottom: 80px;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        width: 100%;
+        text-align: left;
+    }
+    .info-text{
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+            text-align: left;
+            margin: 40px 0 10px 0;
+        }
+        p{
+            font-size: 16px;
+            line-height: 25px;
+        }
+        .info-list{
+                span{
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+            }
+        .h-2{
+            font-size: 22px;
+            font-weight: 700;
+            margin: 20px 0 10px 0;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 20px 0 5px 0;
+        }
+         li{
+             font-size: 16px;
+             line-height: 22px;
+             margin-bottom: 5px;
+        }
+    }
+}
+
+.z-in9{
+    z-index: 9;
+}
+
+.faq-area{
+    .card-header {
+        padding: 0 0 7px 0;
+        background-color: #fff;
+        border-bottom: #fff;
+        .btn-link{
+            padding-left: 0;
+            position: relative;
+            width: 100%;
+            text-align: left;
+            color: #333333;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 25px;
+            &:hover,&.focus,&:focus{
+                text-decoration: none;
+                box-shadow: none;
+            }
+            .arrow-toggle{
+                position: absolute;
+                left: auto;
+                right: 0;
+                top: 13px;
+            }
+            &[aria-expanded="true"]{
+                .arrow-toggle{
+                    transform: rotate(0deg)
+                }
+            }
+            &[aria-expanded="false"]{
+                .arrow-toggle{
+                    transform: rotate(180deg)
+                }
+            }
+        }
+    }
+    .card-body{
+        padding: 0 0 20px 0;
+    }
+    .card{
+        border: none;
+        border-bottom: 1px solid #E3EDF2 !important;
+    }
+}
+
+
+

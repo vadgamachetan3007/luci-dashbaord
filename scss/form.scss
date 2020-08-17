@@ -1,0 +1,214 @@
+/********************************************************
+Variable SCSS for Variable Declaration
+/********************************************************/
+@import "_variable";
+
+/********************************************************
+Basic SCSS for Framework & Elements
+/********************************************************/
+@import "_basic";
+
+/********************************************************
+Header SCSS for Header Part 
+/********************************************************/
+@import "_header";
+
+/********************************************************
+Components SCSS for All Components Fields 
+/********************************************************/
+@import "_components";
+
+/********************************************************
+Animation SCSS for Animatate 
+/********************************************************/
+@import "_animation";
+
+
+
+header{
+    .navbar-light {
+        .navbar-nav .nav-link{
+            color: $primary-text;
+            &:hover{
+                color: $primary-text;
+            }
+            &:focus, &:active{
+                color: $primary-text;
+            }
+        }
+         .navbar-collapse{
+             .navbar-nav .nav-link{
+               &:hover{
+                color: $primary-text;
+            }
+                 &:focus, &:active{
+                    color: $primary-text;
+                } 
+            }
+        }
+    }
+    .bg-c{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/Inner/left-top-bg.svg);
+            background-repeat: no-repeat;
+            height: 463px;
+            width: 100%;
+            top: 0;
+            left: -110px;
+            background-position: left;
+            right: 0;
+            background-size: auto;
+        }
+    }
+}
+
+.form-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 17px 50px rgba(0,0,0,0.1);
+    width: 558px;
+    margin: 0px auto;
+    padding: 30px 50px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    z-index: 9;
+    h1{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .form-txt{
+        margin: 10px 22%;
+        text-align: center;
+    }
+    .or-txt{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.dot-area{
+    .dot-a,.dot-b,.dot-c,.dot-d{
+        z-index: 1;
+    }
+}
+
+footer .bg{
+    position: relative;
+    &:before{
+           content: "";
+    position: absolute;
+    background-image: url(../images/Inner/right-bottom-bg.svg);
+    background-repeat: no-repeat;
+    height: 463px;
+    width: 100%;
+    top: auto;
+    left: auto;
+    background-position: right bottom;
+    right: -115px;
+    background-size: auto;
+    bottom: 0;
+    z-index: 1;
+        }
+}
+
+.password-strength{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 10px;
+    .s-fill{
+        background: #E2E2EA;
+        height: 2px;
+        padding: 1px 5px;
+        border-radius: 7px;
+        border: 1px solid #E2E2EA;
+        width: 16%;
+    }
+    .ps-text{
+        color: #92929D;
+        font-size: 12px;
+    }
+    &.strong{
+        .s-fill{
+            background: #008000;
+            border: 1px solid #008000;
+        }
+        .ps-text{
+            color: #008000;
+        }
+    }
+    &.weak{
+        .s-fill{
+            background: #ff0000;
+            border: 1px solid #ff0000;
+        }
+        .ps-text{
+            color: #ff0000;
+        }
+    }
+    &.medium{
+        .s-fill{
+            background: #ffa500;
+            border: 1px solid #ffa500;
+        }
+        .ps-text{
+            color: #ffa500;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    header .bg-c:before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/Inner/left-top-bg.svg);
+        background-repeat: no-repeat;
+        height: 463px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-position: top left;
+        right: 0;
+        background-size: 60%;
+    }
+    footer .bg:before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/Inner/right-bottom-bg.svg);
+        background-repeat: no-repeat;
+        height: 463px;
+        width: 100%;
+        top: auto;
+        left: auto;
+        background-position: right bottom;
+        right: -15px;
+        background-size: 60%;
+        bottom: 0;
+        z-index: 1;
+    }
+    .form-area{
+        width: 90%;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .form-txt{
+            margin: 10px 4%;
+        }
+    }
+    .form-group .luci-input{
+        width: 100%;
+        min-width: auto;
+    }
+}
+

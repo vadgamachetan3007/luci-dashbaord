@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <title>luci Smart Finance</title>
+      <!-- favicon icon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!--Bootstrap Link--> 
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--Theme CSS-->
+      <link href="css/form.css" rel="stylesheet" type="text/css" >
+      <!--Font CSS-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container bg-header">
+            <div class="row bg-c">
+               <div class="col">
+                  <nav class="navbar navbar-expand-lg navbar-light pt-5">
+                     <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                     <img src="images/navbar-toggler-icon.svg">
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.html#HowItWorks">How it works</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.html#Support">Support</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <form class="form-inline my-2 my-lg-0 btn-signup">
+                        <button class="btn luci-btn primary-btn ml-3 font-weight-bold" type="submit">Sign Up</button>
+                     </form>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="dot-area">
+         <div class="dot-d"><img src="images/dot/dot-d.svg" alt="shape"></div>
+         <div class="dot-b"><img src="images/dot/dot-b.svg" alt="shape"></div>
+         <div class="dot-c"><img src="images/dot/dot-c.svg" alt="shape"></div>
+         <div class="dot-d"><img src="images/dot/dot-d.svg" alt="shape"></div>
+      </div>
+      <section class="form-area">
+         <h1>Login Account</h1>
+         <div class="form-items">
+           
+            <div class="form-group">
+               <input type="email" id="" name="" placeholder="Your Email" class="luci-input">
+            </div>
+            <div class="form-group password-input">
+               <input type="password" id="" name="" placeholder="Password" class="luci-input">
+               <img src="images/Inner/eye.svg" class="pwd-eye">
+                
+            </div>
+             <div class="form-group ml-3 mb-4">
+                 <div class="d-flex justify-content-between">
+                    <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                  <label class="custom-control-label" for="customCheck">Remember Me</label>
+                        </div>
+                     <div class="">
+                        <a href="#" class="link-text">Forgot Password</a>
+                     </div>
+                 </div>
+             </div>
+            <div class="form-group">
+               <p class="form-txt">By continuing, you are agree to luci’s <a href="terms.html" class="link-text">Terms of Service</a> and <a href="privacy-policy.html" class="link-text">Privacy Policy</a></p>
+            </div>
+            <div class="form-group">
+               <button class="btn luci-btn primary-btn font-weight-bold pt-3 pb-3 w-100 submit-btn" type="submit">Sign In</button>
+            </div>
+            <div class="form-group mt-4 mb-4">
+               <p class="or-txt">or sign up using</p>
+            </div>
+            <div class="form-group">
+               <div class="google-btn">
+                  <button class="btn luci-btn primary-btn w-100 google-btn" type="submit">
+                  <img src="images/Inner/google.svg">
+                  Continue with Google</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="bg"></div>
+         </div>
+      </footer>
+   </body>
+   <script src="js/wow.min.js"></script>
+   <script>
+      wow = new WOW(
+              {
+              boxClass:     'wow',      // default
+              animateClass: 'animated', // default
+              offset:       0,          // default
+              mobile:       false,       // default
+              live:         true        // default
+            }
+            )
+            wow.init();
+   </script>
+</html>
