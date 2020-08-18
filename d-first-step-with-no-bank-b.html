@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <title>luci Smart Finance</title>
+      <!-- favicon icon --> 
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!--Bootstrap Link-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--Theme CSS-->
+      <link href="css/dashboard.css" rel="stylesheet" type="text/css" >
+      <!--Font CSS-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container-fluid bg-header">
+            <div class="row bg-c">
+               <div class="col">
+                  <nav class="navbar navbar-expand-lg navbar-light pt-4 pb-4">
+                     <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                     <img src="images/navbar-toggler-icon.svg">
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">How it works</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Support</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Your Results</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <form class="form-inline my-2 my-lg-0 user-name btn-signup">
+                        <a class="nav-link" href="#"><span>Chetan Vadgama</span> <span class="short-name">CV</span></a>
+                     </form>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section>
+         <div class="wrapper profile-sidebar">
+            <div id="sidebar" class="active">
+               <div class="left-side-area">
+                  <div class="sidebar-header">                             
+                     <a href="#" id="sidebarCollapse" class="btn-info-toggle">
+                     <i><img src="images/dashboard/arrow.svg"></i>
+                     <span></span>
+                     </a>
+                  </div>
+                  <div class="sidebar-nav">
+                     <div class="nav-item completed"><a href=""><span title="Accounts Shared with luci"><img src="images/dashboard/as.svg"><img src="images/dashboard/edit.svg" class="edit-icon"></span>Accounts Shared with luci</a></div>
+                     <div class="nav-item selected"><a href=""><span title="Personalized Results"><img src="images/dashboard/pr.svg"></span>Personalized Results</a></div>
+                  </div>
+               </div>
+            </div>
+            <div id="content" class="first-step">
+               <div class="card luci-card">
+                  <div class="card-body">
+                     <div class="luci-title">
+                        Accounts Shared with luci
+                     </div>
+                     <div class="luci-text w-50">
+                        Securely share how you spend your money using Plaid (a Visa company). luci will use the spending data from your selected accounts to create a personalized recommendation. <div class="modal-popover">
+                         <img src="images/dashboard/help-icon.svg" class="help-icon">
+                         <div class="tooltip-luci">
+                         <i class="tasker-popover-arrow"></i>
+                             luci uses the spending data from your selected accounts to create a personalized recommendation. You can also manually enter your spending estimates by clicking <a href="#" class="link-text" data-toggle="modal" data-target="#exampleModal">here</a>. 
+                             </div>
+                         </div>
+                        <div class="text-left mt-4 r-btn">
+                           <button class="btn luci-btn dark-btn font-weight-bold pt-3 pb-3 mr-3 mb-3" type="submit">Add Account</button>
+                           <button class="btn luci-btn gray-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Find Your Perfect Card</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+    
+    <!-- Modal -->
+<div class="modal fade luci-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content p-3">
+      <div class="modal-header border-bottom-0 pb-0">
+        <h5 class="modal-title p-card-title" id="exampleModalLabel">Find your perfect card</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="images/dashboard/close.svg">
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="d-flex subline-text">
+          <img src="images/dashboard/line.svg">
+              <p>In a typical month, how much do you spend on these categories?</p>
+          </div>
+          <div class="categories-list">
+          <div class="c-list">
+              <img src="images/dashboard/modal/dining.svg">
+              <span class="c-name">Dining</span>
+              <input type="text" placeholder="$600" class="category-input">
+              </div>
+              <div class="c-list">
+              <img src="images/dashboard/modal/gas.svg">
+              <span class="c-name">Gas</span>
+              <input type="text" placeholder="$500" class="category-input">
+              </div>
+              <div class="c-list">
+              <img src="images/dashboard/modal/cart.svg">
+              <span class="c-name">Grocery & drug</span>
+              <input type="text" placeholder="$500" class="category-input">
+              </div>
+              <div class="c-list">
+              <img src="images/dashboard/modal/plane.svg">
+              <span class="c-name">Travel</span>
+              <input type="text" placeholder="$500" class="category-input">
+              </div>
+              <div class="c-list">
+              <img src="images/dashboard/modal/entertainment.svg">
+              <span class="c-name">Entertainment</span>
+              <input type="text" placeholder="$500" class="category-input">
+              </div>
+              <div class="c-list">
+              <img src="images/dashboard/modal/everything.svg">
+              <span class="c-name">Everything else</span>
+              <input type="text" placeholder="$500" class="category-input">
+              </div>
+              <div class="c-list">
+                  <span class="c-total">Total :  $3100 </span>
+              </div>  
+          </div>
+      </div>
+      <div class="modal-footer border-top-0 margin-0">
+        <button class="btn luci-btn primary-btn font-weight-bold pt-3 pb-3" type="submit">find your perfect card</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+   <script type="text/javascript">
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+          });
+      });
+   </script>
+</html>
