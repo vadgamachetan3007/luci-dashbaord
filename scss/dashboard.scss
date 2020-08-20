@@ -193,8 +193,8 @@ a#sidebarCollapse {
     width: 100%;
     position: relative;
     #sidebar {
-        min-width: 350px;
-        max-width: 350px;
+        min-width: 290px;
+        max-width: 290px;
         transition: all 0.3s;
         margin-left: 0;
         background: #F6FCFF;
@@ -507,6 +507,187 @@ a#sidebarCollapse {
     }
 }
 
+.second-step{
+    .luci-title{
+        width: 50%;
+    }
+}
+
+.spending-title{
+    .date-format{
+        text-decoration: underline;
+    }
+}
+
+.modal-popover .date-picker-custom{
+    width: 185px;
+    padding: 0;
+    .date-gap{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style-type: none;
+                padding: 0;
+                a{
+                    padding: 8px 5px 8px 15px;
+                    cursor: pointer;
+                    display: block;
+                    color: #222222;
+                    text-decoration: none;
+                    background: #ffffff;
+                    &:hover{
+                        background: #F6F6F6;
+                    }
+                    &.active{
+                        background: #F6F6F6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tab-card{
+    margin: 30px 0 15px 0;
+    .tab-item-title{
+        display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+        border-bottom: 1px solid #dfdfdf;
+        .tab-item{
+          padding-bottom: 10px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 3px;
+            border-bottom: 5px solid #ffffff;
+            a{
+                    color: #222222;
+                    padding: 5px 15px;
+                &:hover{
+                    text-decoration: none;
+                    opacity: 0.8;
+                }
+                }
+            &.active{
+                border-bottom: 5px solid #FF8D5B;
+            }
+            .arrow-tab{
+                width: 12px;
+                transform: rotate(180deg);
+            }
+        }
+        
+    }
+}
+
+.tab-card-data{
+    background: #FFFFFF;
+    border: 1px solid #DDE1ED;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 40px;
+    .card-first {
+        display: flex;
+        justify-content: space-between;
+    }
+    .t-card-name {
+        margin: 0 30px;
+        h4{
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+    .card-points {
+        border: 1px solid #dfdfdf;
+        border-radius: 15px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+        margin: 30px 0;
+        background: #FFF9F3;
+        overflow: hidden;
+        .card-r{
+           
+         
+        }
+         .font-big {
+                font-size: 26px;
+                font-weight: 600;
+             margin-right: 5px;
+            }
+         .rft {
+                display: block;
+            }
+        .font-small {
+    font-size: 18px;
+            margin-right: 5px;
+}
+        .a-center{
+            align-items: center;
+        }
+        > div{
+            padding: 15px 0;
+        }
+    }
+    .card-reward {
+        border-left: 1px solid #dfdfdf;
+        padding-left: 15px !important;
+        background: #ffffff;
+        padding: 15px 50px 15px 15px !important;
+        .rft{
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    
+}
+
+
+.card-features{
+    .card-f-area{
+        justify-content: space-between;
+        display: flex;
+        .card-left{
+            width: 50%;
+            .cl-item{
+                margin-bottom: 20px;
+                .cl-t{
+                    font-weight: 600;
+                    font-size: 16px;
+                    display: block;
+                }
+            }
+        }
+        .card-right{
+            margin-right: auto;
+            width: 50%;
+            border-left: 1px solid #dfdfdf;
+            padding-left: 50px;
+            .cr-title{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .cfi-item {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                width: 220px;
+                margin-top: 15px;
+                font-weight: 600;
+                img {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
 /********************************************************
 BUTTON  
 /********************************************************/
@@ -586,11 +767,11 @@ BUTTON
     }
     .profile-sidebar {
         #sidebar {
-            min-width: 350px;
-            max-width: 350px;
+            min-width: 290px;
+            max-width: 290px;
             position: absolute;
             left: 0;
-            width: 350px;
+            width: 290px;
             z-index: 9;
         }
         #sidebar.active {

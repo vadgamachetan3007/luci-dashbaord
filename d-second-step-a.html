@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="keywords" content="" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <title>luci Smart Finance</title>
+      <!-- favicon icon --> 
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!--Bootstrap Link-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--Theme CSS-->
+      <link href="css/dashboard.css" rel="stylesheet" type="text/css" >
+      <!--Font CSS-->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div class="container-fluid bg-header">
+            <div class="row bg-c">
+               <div class="col">
+                  <nav class="navbar navbar-expand-lg navbar-light pt-4 pb-4">
+                     <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                     <img src="images/navbar-toggler-icon.svg">
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">How it works</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Support</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Your Results</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <form class="form-inline my-2 my-lg-0 user-name btn-signup">
+                        <a class="nav-link" href="#"><span>Chetan Vadgama</span> <span class="short-name">CV</span></a>
+                     </form>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section>
+         <div class="wrapper profile-sidebar">
+            <div id="sidebar" class="active">
+               <div class="left-side-area">
+                  <div class="sidebar-header">                             
+                     <a href="#" id="sidebarCollapse" class="btn-info-toggle">
+                     <i><img src="images/dashboard/arrow.svg"></i>
+                     <span></span>
+                     </a>
+                  </div>
+                  <div class="sidebar-nav">
+                     <div class="nav-item completed"><a href=""><span title="Accounts Shared with luci"><img src="images/dashboard/as.svg"><img src="images/dashboard/edit.svg" class="edit-icon"></span>Accounts Shared with luci</a></div>
+                     <div class="nav-item selected"><a href=""><span title="Personalized Results"><img src="images/dashboard/pr.svg"></span>Personalized Results</a></div>
+                  </div>
+               </div>
+            </div>
+            <div id="content" class="second-step">
+               <div class="card luci-card second-step">
+                  <div class="card-body">
+                     <div class="luci-title">
+                        luci tested <span class="link-text">X credit cards</span> and  found <span class="link-text">$XXX</span> of Total Reward for you 
+                     </div>
+                     <div class="luci-text w-50 spending-title">
+                        Here is your personalized recommendation ranked by savings and rewards based on your spending from 
+                         <span class="date-format">07/13/17 to 07/13/20</span>. <div class="modal-popover">
+                           <img src="images/dashboard/edit-pencil.svg" class="help-icon">
+                           <div class="tooltip-luci date-picker-custom">
+                              <i class="tasker-popover-arrow"></i>
+                              <div class="date-gap">
+                               <ul>
+                                  <li><a href="" class="active">Max</a></li>
+                                  <li><a href="">1 Year</a></li>
+                                  <li><a href="">6 Month</a></li>
+                                  <li><a href="">3 Month</a></li>
+                                  <li><a href="">1 Month</a></li>
+                                  <li><a href="">1 Week</a></li>
+                                  <li><a href="">Custom</a></li>
+                                  </ul>
+                               </div>
+                           </div>
+                        </div> <br>
+                         Change the dates to see results for a different time period.
+                        
+                       
+                     </div>
+                  </div>
+                  <div class="card-body mt-4 padd-xs">
+                     
+                     <div class="tab-card">
+                      <div class="tab-item-title">
+                         
+                          <div class="tab-item active"><a href="" class="active">All</a></div>
+                          <div class="tab-item"><a href="">No Annual Fee</a></div>
+                          <div class="tab-item"><a href="">CashBack</a></div>
+                          <div class="tab-item"><a href="">Intro Bonus</a></div>
+                          <div class="tab-item"><a href="">Rewards</a></div>
+                          <div class="tab-item"><a href="">Travel</a></div>
+                             <div class="tab-item"><a href="">More <img src="images/Inner/arrow.svg" class="arrow-tab">    </a></div>
+                          
+                         </div>
+                      
+                      </div>
+                      
+                      <div class="tab-card-data">
+                      <div class="card-first">
+                          <div class="t-card-img">
+                          <img src="images/dashboard/card-img.svg">
+                          </div>
+                          <div class="t-card-name">
+                          <h4>Citi® Double Cash Card</h4>
+                              <p>Intro Offer: Unlimited Cashback Match - only from Discover. Discover will automatically match all the cash back you've earned at the end of your first year! There's no minimum spending or maximum rewards. Just a dollar-for-dollar match.
+</p>
+                          </div>
+                          <div class="t-card-action">
+                          <button class="btn luci-btn primary-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Apply Now</button>
+                          </div>
+                          </div>
+                          
+                          <div class="card-points">
+                          <div class="card-r ml-5">
+                              <span class="rft">Reward from Transactions</span>
+                              <div class="d-flex a-center">
+                                <span class="font-big">$20</span>
+                              <span class="font-small">(20 points)</span>
+                              <img src="images/dashboard/help-icon.svg">
+                              </div>
+                            
+                              </div>
+                          <div class="card-img-r">
+                              <img src="images/dashboard/plus.svg">
+                              </div>      
+                           <div class="card-bonus">
+                               <span class="rft">Intro Bonus</span>
+                               <div class="d-flex a-center">
+                              <span class="font-big">$100</span>
+                              <img src="images/dashboard/help-icon.svg">
+                               </div>
+                              </div> 
+                              <div class="card-img-r">
+                                <img src="images/dashboard/minus.svg">
+                              </div>    
+                              <div class="card-fee">
+                                  <span class="rft">Annual Fee</span>
+                                  <div class="d-flex a-center">
+                               <span class="font-big">$0</span>
+                              <img src="images/dashboard/help-icon.svg">
+                                  </div>
+                              </div>
+                              <div class="card-img-r">
+                              <img src="images/dashboard/equal.svg">
+                              </div>
+                              <div class="card-reward">
+                                <span class="rft">Total Reward</span>
+                               <span class="font-big">$120</span>
+                              </div>
+                          </div>
+                          
+                          <div class="card-features">
+                          <div class="card-f-area">
+                             <div class="card-left">
+                              <div class="cl-item">
+                                 <span class="cl-t">Annual fee</span>
+                                  <span class="cl-info">$0 <img src="images/dashboard/help-icon.svg"></span>
+                                 </div>
+                                 <div class="cl-item">
+                                 <span class="cl-t">Recommended Credit Score</span>
+                                  <span class="cl-info">690 - 850</span>
+                                 </div>
+                                 <div class="cl-item">
+                                 <span class="cl-t">Reward Rate</span>
+                                  <span class="cl-info">2% Cash Back <img src="images/dashboard/help-icon.svg"></span>
+                                 </div>
+                                 <div class="cl-item">
+                                 <span class="cl-t">Intro Offer</span>
+                                  <span class="cl-info">Miles Match <img src="images/dashboard/help-icon.svg"></span>
+                                 </div>
+                              </div>
+                             <div class="card-right">
+                                <div class="cr-title">
+                                    Features
+                                 </div>
+                                 <div class="cf-icons">
+                                 <div class="cfi-item"><img src="images/dashboard/rate.svg"><span>Flat Rate Cash Back</span></div>
+                                 <div class="cfi-item"><img src="images/dashboard/user.svg"><span>Sign-up Bonus</span></div>
+                                 <div class="cfi-item"><img src="images/dashboard/plane.svg"><span>Travel</span></div>
+                                 <div class="cfi-item"><img src="images/dashboard/fee.svg"><span>No Annual fee</span></div>
+                                 </div>
+                                 </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+   <!-- Modal -->
+   <div class="modal fade luci-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content p-3">
+            <div class="modal-header border-bottom-0 pb-0">
+               <h5 class="modal-title p-card-title" id="exampleModalLabel">Find your perfect card</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <img src="images/dashboard/close.svg">
+               </button>
+            </div>
+            <div class="modal-body">
+               <div class="d-flex subline-text">
+                  <img src="images/dashboard/line.svg">
+                  <p>In a typical month, how much do you spend on these categories?</p>
+               </div>
+               <div class="categories-list">
+                  <div class="c-list">
+                     <img src="images/dashboard/modal/dining.svg">
+                     <span class="c-name">Dining</span>
+                     <input type="text" placeholder="$600" class="category-input">
+                  </div>
+                  <div class="c-list">
+                     <img src="images/dashboard/modal/gas.svg">
+                     <span class="c-name">Gas</span>
+                     <input type="text" placeholder="$500" class="category-input">
+                  </div>
+                  <div class="c-list">
+                     <img src="images/dashboard/modal/cart.svg">
+                     <span class="c-name">Grocery & drug</span>
+                     <input type="text" placeholder="$500" class="category-input">
+                  </div>
+                  <div class="c-list">
+                     <img src="images/dashboard/modal/plane.svg">
+                     <span class="c-name">Travel</span>
+                     <input type="text" placeholder="$500" class="category-input">
+                  </div>
+                  <div class="c-list">
+                     <img src="images/dashboard/modal/entertainment.svg">
+                     <span class="c-name">Entertainment</span>
+                     <input type="text" placeholder="$500" class="category-input">
+                  </div>
+                  <div class="c-list">
+                     <img src="images/dashboard/modal/everything.svg">
+                     <span class="c-name">Everything else</span>
+                     <input type="text" placeholder="$500" class="category-input">
+                  </div>
+                  <div class="c-list">
+                     <span class="c-total">Total :  $3100 </span>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer border-top-0 margin-0">
+               <button class="btn luci-btn primary-btn font-weight-bold pt-3 pb-3" type="submit">find your perfect card</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script type="text/javascript">
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+          });
+      });
+   </script>
+</html>
