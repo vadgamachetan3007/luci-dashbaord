@@ -77,9 +77,9 @@
                         <span class="date-format">07/13/17 to 07/13/20</span>. 
                         <div class="modal-popover">
                            <img src="images/dashboard/edit-pencil.svg" class="help-icon">
-                           <div class="tooltip-luci date-picker-custom">
+                           <div class="tooltip-luci single-modal-item">
                               <i class="tasker-popover-arrow"></i>
-                              <div class="date-gap">
+                              <div class="item-gap">
                                  <ul>
                                     <li><a href="" class="active">Max</a></li>
                                     <li><a href="">1 Year</a></li>
@@ -105,7 +105,25 @@
                            <div class="tab-item"><a href="">Intro Bonus</a></div>
                            <div class="tab-item"><a href="">Rewards</a></div>
                            <div class="tab-item"><a href="">Travel</a></div>
-                           <div class="tab-item"><a href="">More <img src="images/Inner/arrow.svg" class="arrow-tab">    </a></div>
+                           <div class="tab-item modal-popover"><a href="">More <img src="images/Inner/arrow.svg" class="arrow-tab"> 
+                              
+                               
+                               </a>
+                             <div class="tooltip-luci single-modal-item">
+                              <i class="tasker-popover-arrow"></i>
+                              <div class="item-gap">
+                                 <ul>
+                                    <li><a href="" class="active">Max</a></li>
+                                    <li><a href="">1 Year</a></li>
+                                    <li><a href="">6 Month</a></li>
+                                    <li><a href="">3 Month</a></li>
+                                    <li><a href="">1 Month</a></li>
+                                    <li><a href="">1 Week</a></li>
+                                    <li><a href="">Custom</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                            </div>
                         </div>
                         <div class="web-hide">
                            <div class="form-group">
@@ -334,6 +352,7 @@
                            <a  class="va-title" data-toggle="collapse" href="#collapseExample-a" role="button" aria-expanded="false" aria-controls="collapseExample-a">View All X Cards <br><img src="images/Inner/arrow.svg" class="arrow-tab-more"></a>
                           
                            <div class="collapse" id="collapseExample-a">
+                               <div class="table-responsive">
                               <div class="table-card">
                                   <div class="header-card">
                                     <span class="all-card">All X Cards</span>
@@ -381,7 +400,191 @@
                            </div>
                                         
                                       </span>
+                                      
+                                      <div class="mobile-filter">
+                                       <span class="right-filter-label">Sort By</span>
+                                    <span class="right-filter">
+                                      
+                                      
+                                         <div class="form-group mb-0">
+                           
+                              <div class="custom-dropdown-box">
+                                 <div id="ddddd" class="custom-dropdown" tabindex="1">
+                                    <img src="images/Inner/arrow.svg" class="dropdown-arrow-img">
+                                    <span>Reward from Transactions</span>
+                                    <ul class="dropdown">
+                                       <li><a href="#">Reward from Transactions</a></li>
+                                       <li><a href="#">Total Reward</a></li>
+                                       <li><a href="#">Category and Features</a></li>
+                                       <li><a href="#">Intro Bonus</a></li>
+                                       <li><a href="#">Annual fee</a></li>
+                                       <li><a href="#">Rewards Rate</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                                        
+                                      </span>
+                                      </div>
                                   </div>
+                                  
+                                  <div class="table-card-data">
+                                    <table class="table-card table">
+                                      <thead>
+                                          <tr>
+                                        <th>Card </th>
+                                        <th>Category and Features </th>
+                                        <th>Total Reward</th>
+                                        <th>Reward from transactions </th>
+                                        <th>Intro Bonus </th>
+                                        <th>Annual fee </th>
+                                        <th>Rewards Rate </th>
+                                        <th> </th>
+                                              </tr>
+                                        </thead>
+                                        
+                                        
+                                        <tbody>
+                                        <tr class="card-row">
+                                        <td class="first-c"><img src="images/dashboard/table/card_citi.svg" class="card-tbl-img"> <br> <span class="card-nm">Citi® Double Cash Card</span> <img src="images/dashboard/help-icon.svg"></td>
+                                        <td>
+                                            <div class="feature-tab">
+                                                <img src="images/dashboard/table/doller.svg"> <span>Flat Rate Cash Back</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/user.svg"> <span>Sign-up Bonus</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/plan.svg"> <span>Travel</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/cal.svg"> <span>No Annual fee</span>
+                                            </div>
+                                            </td>
+                                        <td class="primary-bg">
+                                            <span class="blue-txt">$120</span>
+                                            </td>
+                                        <td class="t-left">
+                                            <span class="blue-txt">+$20 <br>(20 points) <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td class="t-left">
+                                            <span class="blue-txt">+$100 <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td class="t-left">
+                                            <span class="blue-txt">$0 <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td>
+                                            <span class="w-nowarp">2% Cash Back <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td>
+                                            <div class="d-grid">
+                              <button class="btn luci-btn primary-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Apply Now</button>
+                                                <button class="btn luci-btn dark-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Detail</button>
+                           </div>
+                                            
+                                            </td>
+                                            </tr>
+                                            <tr class="card-row">
+                                        <td class="first-c"><img src="images/dashboard/table/card_citi.svg" class="card-tbl-img"> <br> <span class="card-nm">Citi® Double Cash Card</span> <img src="images/dashboard/help-icon.svg"></td>
+                                        <td>
+                                            <div class="feature-tab">
+                                                <img src="images/dashboard/table/doller.svg"> <span>Flat Rate Cash Back</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/user.svg"> <span>Sign-up Bonus</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/plan.svg"> <span>Travel</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/cal.svg"> <span>No Annual fee</span>
+                                            </div>
+                                            </td>
+                                        <td class="primary-bg">
+                                            <span class="blue-txt">$120</span>
+                                            </td>
+                                        <td class="t-left">
+                                            <span class="blue-txt">+$20 <br>(20 points) <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td class="t-left">
+                                            <span class="blue-txt">+$100 <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td class="t-left">
+                                            <span class="blue-txt">$0 <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td>
+                                            <span class="w-nowarp">2% Cash Back <img src="images/dashboard/help-icon.svg"></span>
+                                            </td>
+                                        <td>
+                                            <div class="d-grid">
+                              <button class="btn luci-btn primary-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Apply Now</button>
+                                                <button class="btn luci-btn dark-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Detail</button>
+                           </div>
+                                            
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                  </div>
+                                  
+                                  <div class="mob-card-table">
+                                        <div class="mc-detail align-set">
+                                        <div class="img-card">
+                                            <img src="images/dashboard/card-img.svg">
+                                            </div>
+                                            <div class="card-name">
+                                                <span class="card-nm">Citi® Double Cash Card</span> <img src="images/dashboard/help-icon.svg">
+                                            </div>
+                                      </div>
+                                      <div class="mc-detail align-set">
+                                       
+                                            <button class="btn luci-btn primary-btn shadow-btn font-weight-bold pt-3 pb-3" type="submit">Apply Now</button>
+                                                <button class="btn luci-btn dark-btn shadow-btn font-weight-bold pt-3 pb-3" type="submit">Detail</button>
+                                      </div>
+                                      <div class="mc-detail cat-area">
+                                          <span class="cat-title">Category & Features</span>
+                                            <div class="feature-tab">
+                                                <img src="images/dashboard/table/doller.svg"> <span>Flat Rate Cash Back</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/user.svg"> <span>Sign-up Bonus</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/plan.svg"> <span>Travel</span>
+                                            </div>
+                                             <div class="feature-tab">
+                                                <img src="images/dashboard/table/cal.svg"> <span>No Annual fee</span>
+                                            </div>
+                                      </div>
+                                      
+                                      <div class="mc-detail card-features">
+                                      <div class="card-left">
+                                 <div class="cl-item">
+                                    <span class="cl-t">Total Savings</span>
+                                    <span class="cl-info">$120 </span>
+                                 </div>
+                                 <div class="cl-item">
+                                    <span class="cl-t">Reward from Transactions</span>
+                                    <span class="cl-info">+$20 (20 points) <img src="images/dashboard/help-icon.svg"></span>
+                                 </div>
+                                 <div class="cl-item">
+                                    <span class="cl-t">Intro Bonus</span>
+                                    <span class="cl-info">+$100 <img src="images/dashboard/help-icon.svg"></span>
+                                 </div>
+                                 <div class="cl-item">
+                                    <span class="cl-t">Annual Fee</span>
+                                    <span class="cl-info">$0</span>
+                                 </div>
+                                           <div class="cl-item">
+                                    <span class="cl-t">Reward Rate</span>
+                                    <span class="cl-info">2% Cash Back <img src="images/dashboard/help-icon.svg"></span>
+                                 </div>
+                              </div>
+                                      </div>
+                                      <img src="images/dashboard/arrow-black.svg" class="black-arrow">
+                                      <img src="images/dashboard/arrow-black.svg" class="black-arrow right">
+                                  </div>
+                               </div>
                                </div>
                           </div>
                           
@@ -515,6 +718,17 @@
         $(function() {
       
       	var dd = new DropDown( $('#dddd') );
+      
+      	$(document).click(function() {
+      		// all dropdowns
+      		$('.wrapper-dropdown-3').removeClass('active');
+      	});
+      
+      });
+       
+        $(function() {
+      
+      	var dd = new DropDown( $('#ddddd') );
       
       	$(document).click(function() {
       		// all dropdowns
