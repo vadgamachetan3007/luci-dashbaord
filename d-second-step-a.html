@@ -518,7 +518,7 @@
                                         <td>
                                             <div class="d-grid">
                               <button class="btn luci-btn primary-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Apply Now</button>
-                                                <button class="btn luci-btn dark-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit">Detail</button>
+                                                <button class="btn luci-btn dark-btn shadow-btn font-weight-bold pt-3 pb-3 mb-3" type="submit" data-toggle="modal" data-target="#exampleModal-a">Detail</button>
                            </div>
                                             
                                             </td>
@@ -528,7 +528,7 @@
                                   </div>
                                   
                                   <div class="mob-card-table">
-                                        <div class="mc-detail align-set">
+                                        <div class="card-id">
                                         <div class="img-card">
                                             <img src="images/dashboard/card-img.svg">
                                             </div>
@@ -596,62 +596,7 @@
       </section>
    </body>
    <!-- Modal -->
-   <div class="modal fade luci-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-         <div class="modal-content p-3">
-            <div class="modal-header border-bottom-0 pb-0">
-               <h5 class="modal-title p-card-title" id="exampleModalLabel">Find your perfect card</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <img src="images/dashboard/close.svg">
-               </button>
-            </div>
-            <div class="modal-body">
-               <div class="d-flex subline-text">
-                  <img src="images/dashboard/line.svg">
-                  <p>In a typical month, how much do you spend on these categories?</p>
-               </div>
-               <div class="categories-list">
-                  <div class="c-list">
-                     <img src="images/dashboard/modal/dining.svg">
-                     <span class="c-name">Dining</span>
-                     <input type="text" placeholder="$600" class="category-input">
-                  </div>
-                  <div class="c-list">
-                     <img src="images/dashboard/modal/gas.svg">
-                     <span class="c-name">Gas</span>
-                     <input type="text" placeholder="$500" class="category-input">
-                  </div>
-                  <div class="c-list">
-                     <img src="images/dashboard/modal/cart.svg">
-                     <span class="c-name">Grocery & drug</span>
-                     <input type="text" placeholder="$500" class="category-input">
-                  </div>
-                  <div class="c-list">
-                     <img src="images/dashboard/modal/plane.svg">
-                     <span class="c-name">Travel</span>
-                     <input type="text" placeholder="$500" class="category-input">
-                  </div>
-                  <div class="c-list">
-                     <img src="images/dashboard/modal/entertainment.svg">
-                     <span class="c-name">Entertainment</span>
-                     <input type="text" placeholder="$500" class="category-input">
-                  </div>
-                  <div class="c-list">
-                     <img src="images/dashboard/modal/everything.svg">
-                     <span class="c-name">Everything else</span>
-                     <input type="text" placeholder="$500" class="category-input">
-                  </div>
-                  <div class="c-list">
-                     <span class="c-total">Total :  $3100 </span>
-                  </div>
-               </div>
-            </div>
-            <div class="modal-footer border-top-0 margin-0">
-               <button class="btn luci-btn primary-btn font-weight-bold pt-3 pb-3" type="submit">find your perfect card</button>
-            </div>
-         </div>
-      </div>
-   </div>
+   
    <script type="text/javascript">
       $(document).ready(function () {
           $('#sidebarCollapse').on('click', function () {
@@ -737,4 +682,142 @@
       
       });
    </script>
+    
+     <div class="modal fade luci-modal card-detail-modal bd-example-modal-lg" id="exampleModal-a" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+         <div class="modal-content p-0">
+           
+             
+             <div class="modal-header">
+        <h5 class="modal-title">Card Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="images/dashboard/close.svg">
+        </button>
+      </div>
+            <div class="modal-body">
+             <div class="card-first">
+                <div class="t-card-img">
+                              <img src="images/dashboard/card-img.svg">
+                           </div>
+                 <div class="t-card-name">
+                              <h4>Citi® Double Cash Card</h4>
+                              <p>Intro Offer: Unlimited Cashback Match - only from Discover. Discover will automatically match all the cash back you've earned at the end of your first year! There's no minimum spending or maximum rewards. Just a dollar-for-dollar match.</p>
+                           </div>
+                </div>
+                
+                <div class="card-f">
+                        <div class="cf-item">
+                            <span class="cf-title">Annual fee</span>
+                            <span class="cf-value">0</span>
+                       </div>
+                     <div class="cf-item">
+                            <span class="cf-title">Intro APR</span>
+                            <span class="cf-value">Miles Match</span>
+                       </div>
+                     <div class="cf-item">
+                            <span class="cf-title">Regular APR</span>
+                            <span class="cf-value">15.99% - 22.99%</span>
+                       </div>
+                     <div class="cf-item">
+                            <span class="cf-title">Intro Bonus</span>
+                            <span class="cf-value">$250</span>
+                       </div>
+                     <div class="cf-item">
+                            <span class="cf-title">Cashback</span>
+                            <span class="cf-value">6%</span>
+                       </div>
+                     <div class="cf-item">
+                            <span class="cf-title">Credit Range</span>
+                            <span class="cf-value">690 - 850</span>
+                       </div>
+                    
+                    
+                </div>
+                
+                <div class="card-tab">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Card Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Category & Features</a>
+                  </li>
+               
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active see-more" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    
+                      <div class="card-dtl">
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>Earn cash back twice. Earn 2% on every purchase with unlimited 1% cash back when you buy, plus an additional 1% as you pay for those purchases.</p>
+                                    </div>
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>If you transfer a balance, interest will be charged on your purchases unless you pay your entire balance (including balance transfers) by the due date each month.</p>
+                                    </div>
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>To earn cash back, pay at least the minimum due on time.</p>
+                                    </div>
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>There is a balance transfer fee of either $5 or 3% of the amount of each transfer, whichever is greater.</p>
+                                    </div>
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>Balance Transfer Offer: 0% intro APR on Balance Transfers for 18 months. After that, the variable APR will be 13.99% - 23.99%, based on your creditworthiness.
+                                       </p>
+                                    </div>
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>The standard variable APR for Citi Flex Plan is 13.99% - 23.99% based on your creditworthiness. Citi Flex Plan offers are made available at Citi's discretion.
+                                       </p>
+                                    </div>
+                                    <div class="card-dtl-item">
+                                       <img src="images/dashboard/line.svg">
+                                       <p>Balance Transfers do not earn cash back.</p>
+                                    </div>
+                                 </div>
+                      
+                      
+                    </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    
+                    
+                      <div class="card-features">
+                           <div class="card-f-area">
+                              <div class="card-left">
+                                  <div class="cr-title">
+                                    Category
+                                 </div>
+                                  <div class="cf-icons">
+                                    <div class="cfi-item"><img src="images/dashboard/rate.svg"><span>Flat Rate Cash Back</span></div>
+                                    <div class="cfi-item"><img src="images/dashboard/user.svg"><span>Sign-up Bonus</span></div>
+                                    <div class="cfi-item"><img src="images/dashboard/plane.svg"><span>Travel</span></div>
+                                    <div class="cfi-item"><img src="images/dashboard/fee.svg"><span>No Annual fee</span></div>
+                                 </div>
+                              </div>
+                              <div class="card-right">
+                                 <div class="cr-title">
+                                    Features
+                                 </div>
+                                 <div class="cf-icons">
+                                    <div class="cfi-item"><img src="images/dashboard/rate-g.svg"><span>Flat Rate Cash Back</span></div>
+                                    <div class="cfi-item"><img src="images/dashboard/user-g.svg"><span>Sign-up Bonus</span></div>
+                                    <div class="cfi-item"><img src="images/dashboard/plane-g.svg"><span>Travel</span></div>
+                                    <div class="cfi-item"><img src="images/dashboard/fee-g.svg"><span>No Annual fee</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                
+                </div>
+                </div>
+               
+            </div>
+         </div>
+      </div>
+   </div>
 </html>

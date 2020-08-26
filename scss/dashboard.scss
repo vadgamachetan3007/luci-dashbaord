@@ -1012,6 +1012,79 @@ BUTTON
     }
 }
 
+
+.card-detail-modal{
+    .modal-title{
+        font-size: 16px;
+    }
+    .modal-header{
+        background: #DDE1ED;
+    }
+    .card-first {
+        display: flex;
+        justify-content: space-between;
+    }
+    .t-card-name {
+        margin: 0 30px;
+        h4 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+    }
+    .card-f {
+        display: flex;
+        justify-content: space-around;
+    }
+    .cf-item {
+        text-align: left;
+        
+    }
+    .cf-title {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .cf-value{
+        display: block;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .card-tab {
+        margin: 50px 0 20px 0;
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: #222222;
+            background-color: #ffffff;
+            border-bottom: 3px solid #FF8976;
+            border-radius: 0;
+        }
+        .nav-link{
+            color: #222222;
+            &:hover{
+                color: #222222;
+            }
+        }
+        .nav-pills{
+            border-bottom: 1px solid #efefef;
+        }
+        .cr-title{
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600 !important;
+        }
+        .cfi-item{
+            margin-top: 0 !important;
+            margin-bottom: 5px;
+            font-weight: 500 !important;
+            img{
+                margin-right: 15px !important;
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+}
+
 /********************************************************/
 /* Max-Width 1024PX     *********************************/
 /********************************************************/
@@ -1127,6 +1200,11 @@ BUTTON
             right: -22px;
             left: auto;
         }
+        .card-id{
+            .card-name {
+                margin: 10px 0;
+            }
+        }
     }
     .table-card {
         .header-card {
@@ -1137,7 +1215,6 @@ BUTTON
         }
     }
 }
-
 
 /********************************************************/
 /* Max-Width 991PX     *********************************/
@@ -1259,11 +1336,36 @@ BUTTON
     .luci-card .luci-text {
         font-size: 13px;
     }
+    .card-detail-modal {
+        .card-first{
+            flex-direction: column;
+        }
+        .t-card-name {
+            margin: 15px 0;
+        }
+        .card-f{
+            flex-wrap: wrap;
+            justify-content: inherit;
+        }
+        .cf-item {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .card-features {
+            .card-f-area{
+                flex-direction: column;
+            }
+            .card-right{
+                border-left: none;
+                padding-left: 0;
+                margin-top: 25px;
+            }
+        }
+    }
 }
 
-
 /********************************************************/
-/* Max-Width 767PX     *********************************/
+/* Min-Width 767PX     *********************************/
 /********************************************************/
 @media (min-width: 767px) {
     .web-hide{
