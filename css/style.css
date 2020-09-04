@@ -261,13 +261,14 @@ BUTTON
 
 .luci-btn {
   border: none;
-  border-radius: 25px;
+  border-radius: 100px;
   font-size: 14px;
-  padding: 12px 30px;
+  padding: 18px 30px;
   min-width: 175px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all .35s ease;
-  transition: all .35s ease; }
+  transition: all .35s ease;
+  height: 62px; }
   .luci-btn:focus {
     box-shadow: none;
     outline: none; }
@@ -1065,6 +1066,24 @@ Kaargar | Components | Animation
   z-index: -1;
   -webkit-animation: animationFramesOne 35s infinite linear;
   animation: animationFramesOne 35s infinite linear; }
+
+.dot-a-a {
+  position: absolute;
+  z-index: -1;
+  top: 82%;
+  right: 88%; }
+
+.dot-a-b {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  right: 90%; }
+
+.dot-a-c {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 10%; }
 
 @-webkit-keyframes animationFramesOne {
   0% {

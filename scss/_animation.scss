@@ -333,6 +333,26 @@ Kaargar | Components | Animation
     animation: animationFramesOne 35s infinite linear;
 }
 
+.dot-a-a {
+  position: absolute;
+  z-index: -1;
+  top: 82%;
+    right: 88%; }
+
+
+.dot-a-b {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  right: 90%; }
+
+
+.dot-a-c {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 10%; }
+
 @-webkit-keyframes animationFramesOne {
     0% {
         -webkit-transform: translate(0px,0px) rotate(0deg);

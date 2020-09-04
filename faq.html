@@ -71,9 +71,9 @@
             </div>
          </div>
          <div class="dot-a"><img src="images/dot/dot-a.svg" alt="shape"></div>
-         <div class="dot-b"><img src="images/dot/dot-b.svg" alt="shape"></div>
-         <div class="dot-c"><img src="images/dot/dot-c.svg" alt="shape"></div>
-         <div class="dot-d"><img src="images/dot/dot-d.svg" alt="shape"></div>
+         <div class="dot-a-a"><img src="images/dot/dot-b.svg" alt="shape"></div>
+         <div class="dot-a-b"><img src="images/dot/dot-c.svg" alt="shape"></div>
+         <div class="dot-a-c"><img src="images/dot/dot-d.svg" alt="shape"></div>
       </section>
       <section class="informative-area" id="info-area">
          <div class="container">
@@ -92,7 +92,7 @@
                               <img src="images/Inner/arrow.svg" class="arrow-toggle">
                               </button>
                            </div>
-                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
                               <div class="card-body">
                                  Say goodbye to hours of reading through credit card blogs to find your credit card. Luci recommends credit cards that will maximize your rewards by understanding how you spend your money. 
                               </div>
@@ -107,7 +107,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
                               <div class="card-body">
                                  Using the spending data that you share with luci, luci’s patent pending technology calculates what your rewards would have been if you had spent your money using different credit cards. <br><br>
                                  luci calculates your reward potential for all the credit cards that are in luci’s database, and provides you with a personalized recommendation on cards that could give you the most reward for your spending habit. 
@@ -123,7 +123,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
                               <div class="card-body">
                                  luci uses bank-level SSL encryption and secures your data with 256-bit encryption. 
                               </div>
@@ -138,7 +138,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapse-f" class="collapse" aria-labelledby="heading-f" data-parent="#accordionExample">
+                           <div id="collapse-f" class="collapse" aria-labelledby="heading-f">
                               <div class="card-body">
                                  luci does not sell any of your personal information to third parties. 
                               </div>
@@ -153,7 +153,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapse-fv" class="collapse" aria-labelledby="heading-fv" data-parent="#accordionExample">
+                           <div id="collapse-fv" class="collapse" aria-labelledby="heading-fv">
                               <div class="card-body">
                                  luci is 100% free to users. luci receives referral credits from credit card partners when users sign-up for the card using links on luci. Not all credit cards give luci referral credits but luci still displays them to give users the best recommendation possible.
                               </div>
@@ -168,7 +168,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapse-s" class="collapse" aria-labelledby="heading-s" data-parent="#accordionExample">
+                           <div id="collapse-s" class="collapse" aria-labelledby="heading-s">
                               <div class="card-body">
                                  By securely connecting to your bank accounts using Plaid (a Visa company), you can share your spending data with luci. luci only receives your spending history and nothing else. luci and Plaid cannot make transactions or transfers on your accounts.
                               </div>
@@ -183,7 +183,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapse-sv" class="collapse" aria-labelledby="heading-sv" data-parent="#accordionExample">
+                           <div id="collapse-sv" class="collapse" aria-labelledby="heading-sv">
                               <div class="card-body">
                                  <a href="https://plaid.com/security/" target="_blank">Plaid</a> is a Visa company that helps you securely connect apps and services with your bank accounts. Plaid uses a combination of Advanced Encryption Standard (AES-256) and Transport Layer Security (TLS) to help keep your personal information safe end-to-end. The end-to-end encryption ensures that luci does not receive or see your bank account login credentials. 
                               </div>
@@ -198,7 +198,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapse-e" class="collapse" aria-labelledby="heading-e" data-parent="#accordionExample">
+                           <div id="collapse-e" class="collapse" aria-labelledby="heading-e">
                               <div class="card-body">
                                  Simply make an account by clicking <a href="signup.html" target="_blank">here</a>. We are excited to help you save money and time! 
                               </div>
@@ -213,7 +213,7 @@
                                  </button>
                               </h2>
                            </div>
-                           <div id="collapse-v" class="collapse" aria-labelledby="heading-v" data-parent="#accordionExample">
+                           <div id="collapse-v" class="collapse" aria-labelledby="heading-v">
                               <div class="card-body">
                                  We love hearing from our users. Email us at <a href="mailto:support@joinluci.com">support@joinluci.com</a>.
                               </div>
@@ -262,6 +262,10 @@
    </body>
    <script src="js/wow.min.js"></script>
    <script>
+       
+       $('.collapse').collapse({
+  toggle: false
+})
       wow = new WOW(
               {
               boxClass:     'wow',      // default

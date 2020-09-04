@@ -13,13 +13,14 @@ BUTTON
 
 .luci-btn{
     border: none;
-    border-radius: 25px;
+    border-radius: 100px;
     font-size: $font-size-default;
-    padding: 12px 30px;
+    padding: 18px 30px;
     min-width: 175px;
     box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1);
     -webkit-transition: all .35s ease;
     transition: all .35s ease;
+    height: 62px;
     &:focus{
         box-shadow: none;
         outline: none;
