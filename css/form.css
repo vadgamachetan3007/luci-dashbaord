@@ -24,7 +24,8 @@ body, html {
   -moz-font-feature-settings: liga,kern;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 input:focus {
   outline: none; }

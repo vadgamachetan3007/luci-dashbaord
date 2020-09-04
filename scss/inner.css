@@ -24,8 +24,7 @@ body, html {
   -moz-font-feature-settings: liga,kern;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden; }
+  scroll-behavior: smooth; }
 
 input:focus {
   outline: none; }
@@ -119,7 +118,7 @@ Banner SCSS
     top: 0;
     left: auto;
     background-position: right;
-    right: 0;
+    right: -100px;
     background-size: 60%;
     z-index: 1; }
   .bg-header:after {
@@ -132,7 +131,7 @@ Banner SCSS
     top: 90px;
     left: auto;
     background-position: right;
-    right: 0;
+    right: -100px;
     background-size: 45%;
     z-index: 0; }
   .bg-header > .bg-c:before {
@@ -145,49 +144,7 @@ Banner SCSS
     top: -30px;
     left: auto;
     background-position: right;
-    right: 0;
-    background-size: 28.5%;
-    z-index: 1; }
-
-.bg-header-b {
-  position: relative; }
-  .bg-header-b:before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-a.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: 0;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 60%;
-    z-index: 1; }
-  .bg-header-b:after {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-b.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: 90px;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 45%;
-    z-index: 0; }
-  .bg-header-b > .bg-c:before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-c.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: -30px;
-    left: auto;
-    background-position: right;
-    right: 0;
+    right: -100px;
     background-size: 28.5%;
     z-index: 1; }
 
@@ -304,14 +261,13 @@ BUTTON
 
 .luci-btn {
   border: none;
-  border-radius: 100px;
+  border-radius: 25px;
   font-size: 14px;
-  padding: 18px 30px;
+  padding: 12px 30px;
   min-width: 175px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all .35s ease;
-  transition: all .35s ease;
-  height: 62px; }
+  transition: all .35s ease; }
   .luci-btn:focus {
     box-shadow: none;
     outline: none; }
@@ -757,24 +713,6 @@ Kaargar | Components | Animation
   z-index: -1;
   -webkit-animation: animationFramesOne 35s infinite linear;
   animation: animationFramesOne 35s infinite linear; }
-
-.dot-a-a {
-  position: absolute;
-  z-index: -1;
-  top: 82%;
-  right: 88%; }
-
-.dot-a-b {
-  position: absolute;
-  z-index: -1;
-  top: 0%;
-  right: 90%; }
-
-.dot-a-c {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  right: 10%; }
 
 @-webkit-keyframes animationFramesOne {
   0% {

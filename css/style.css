@@ -24,7 +24,8 @@ body, html {
   -moz-font-feature-settings: liga,kern;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 input:focus {
   outline: none; }
@@ -118,7 +119,7 @@ Banner SCSS
     top: 0;
     left: auto;
     background-position: right;
-    right: -100px;
+    right: 0;
     background-size: 60%;
     z-index: 1; }
   .bg-header:after {
@@ -131,7 +132,7 @@ Banner SCSS
     top: 90px;
     left: auto;
     background-position: right;
-    right: -100px;
+    right: 0;
     background-size: 45%;
     z-index: 0; }
   .bg-header > .bg-c:before {
@@ -144,7 +145,49 @@ Banner SCSS
     top: -30px;
     left: auto;
     background-position: right;
-    right: -100px;
+    right: 0;
+    background-size: 28.5%;
+    z-index: 1; }
+
+.bg-header-b {
+  position: relative; }
+  .bg-header-b:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg-a.svg);
+    background-repeat: no-repeat;
+    height: 772px;
+    width: 100%;
+    top: 0;
+    left: auto;
+    background-position: right;
+    right: 0;
+    background-size: 60%;
+    z-index: 1; }
+  .bg-header-b:after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg-b.svg);
+    background-repeat: no-repeat;
+    height: 772px;
+    width: 100%;
+    top: 90px;
+    left: auto;
+    background-position: right;
+    right: 0;
+    background-size: 45%;
+    z-index: 0; }
+  .bg-header-b > .bg-c:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/bg-c.svg);
+    background-repeat: no-repeat;
+    height: 772px;
+    width: 100%;
+    top: -30px;
+    left: auto;
+    background-position: right;
+    right: 0;
     background-size: 28.5%;
     z-index: 1; }
 
@@ -511,7 +554,22 @@ Problem Question SCSS
 How it works SCSS  
 /********************************************************/
 .how-it-works {
-  padding: 60px 0; }
+  padding: 60px 0;
+  position: relative; }
+  .how-it-works:before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/hiw-bg.svg);
+    height: 100%;
+    width: 40%;
+    top: 0;
+    background-position: right center;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .how-it-works .hl-img {
+    margin: 90px 0 0 -200px;
+    position: relative; }
   .how-it-works h2 {
     font-size: 40px;
     font-weight: 700;
@@ -520,18 +578,6 @@ How it works SCSS
   .how-it-works .hiw-left {
     position: relative;
     margin-top: 20px; }
-    .how-it-works .hiw-left:before {
-      position: absolute;
-      content: "";
-      background-image: url(../images/hiw-bg.svg);
-      height: 660px;
-      width: 645px;
-      top: 20px;
-      background-position: right top;
-      left: -115px; }
-    .how-it-works .hiw-left .hl-img {
-      margin: 100px 0 0 -60px;
-      position: relative; }
   .how-it-works .hiw-right {
     margin-top: 20px; }
     .how-it-works .hiw-right .hiw-points {

@@ -116,6 +116,23 @@ How it works SCSS
 
 .how-it-works{
     padding: 60px 0;
+    position: relative;
+     &:before{
+        position: absolute;
+        content: "";
+        background-image: url(../images/hiw-bg.svg);
+        height: 100%;
+        width: 40%;
+        top: 0;
+        background-position: right center;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .hl-img{
+        margin: 90px 0 0 -200px;
+        position: relative;
+    }
     h2{
         font-size: 40px;
         font-weight: 700;
@@ -125,20 +142,7 @@ How it works SCSS
     .hiw-left{
         position: relative;
         margin-top: 20px;
-        &:before{
-            position: absolute;
-            content: "";
-            background-image: url(../images/hiw-bg.svg);
-            height: 660px;
-            width: 645px;
-            top: 20px;
-            background-position: right top;
-            left: -115px;
-        }
-        .hl-img{
-            margin: 100px 0 0 -60px;
-            position: relative;
-        }
+       
     }
     .hiw-right{
         margin-top: 20px;

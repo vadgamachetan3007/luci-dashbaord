@@ -24,8 +24,7 @@ body, html {
   -moz-font-feature-settings: liga,kern;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden; }
+  scroll-behavior: smooth; }
 
 input:focus {
   outline: none; }
@@ -102,194 +101,6 @@ header .navbar-light {
     header .bg-header .navbar-nav .nav-link {
       color: #222222; } }
 /********************************************************
-Banner SCSS for Header Part 
-/********************************************************/
-/********************************************************
-Banner SCSS  
-/********************************************************/
-.bg-header {
-  position: relative; }
-  .bg-header:before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-a.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: 0;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 60%;
-    z-index: 1; }
-  .bg-header:after {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-b.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: 90px;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 45%;
-    z-index: 0; }
-  .bg-header > .bg-c:before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-c.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: -30px;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 28.5%;
-    z-index: 1; }
-
-.bg-header-b {
-  position: relative; }
-  .bg-header-b:before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-a.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: 0;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 60%;
-    z-index: 1; }
-  .bg-header-b:after {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-b.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: 90px;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 45%;
-    z-index: 0; }
-  .bg-header-b > .bg-c:before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/bg-c.svg);
-    background-repeat: no-repeat;
-    height: 772px;
-    width: 100%;
-    top: -30px;
-    left: auto;
-    background-position: right;
-    right: 0;
-    background-size: 28.5%;
-    z-index: 1; }
-
-.banner {
-  z-index: 1;
-  position: relative;
-  width: 100%;
-  padding: 50px 0 10px 0; }
-  .banner .banner-text {
-    padding: 80px 0 0 0; }
-    .banner .banner-text h1 {
-      font-size: 45px;
-      font-weight: 700; }
-    .banner .banner-text p {
-      font-size: 20px; }
-  .banner .card-items {
-    margin-top: -135px;
-    margin-right: 63px; }
-  .banner .card-lg {
-    margin-top: -55px; }
-  .banner .card-area {
-    margin: 30px 0; }
-
-/********************************************************/
-/* Max-Width 1200PX     *********************************/
-/********************************************************/
-@media (max-width: 1200px) {
-  .bg-header:before {
-    content: "";
-    background-image: url(../images/bg-a.svg);
-    background-position: right top;
-    background-size: 75%;
-    right: 0; }
-  .bg-header:after {
-    display: none; }
-  .bg-header > .bg-c:before {
-    background-size: 30%;
-    right: 0;
-    top: 0; } }
-/********************************************************/
-/* Max-Width 991PX     **********************************/
-/********************************************************/
-@media (max-width: 991px) {
-  .bg-header:before {
-    background-size: 75%;
-    right: 0; }
-  .bg-header:after {
-    background-size: 50%;
-    right: 0;
-    top: 0; }
-  .bg-header > .bg-c:before {
-    background-position: right top; }
-
-  .banner-right {
-    order: 1; }
-
-  .banner-left {
-    order: 2; }
-
-  .banner .card-area {
-    text-align: center !important; }
-  .banner .card-items {
-    margin-top: -125px;
-    margin-right: 220px; }
-  .banner .banner-text {
-    text-align: center !important;
-    padding: 40px 0 0 0; }
-    .banner .banner-text h1 {
-      font-size: 34px;
-      line-height: 54px; }
-  .banner .btn-area {
-    text-align: center; } }
-/********************************************************/
-/* Max-Width 576PX     **********************************/
-/********************************************************/
-@media (max-width: 576px) {
-  .bg-header:before {
-    content: "";
-    background-image: url(../images/mob-view.svg);
-    background-size: 100%;
-    right: 0; }
-  .bg-header:after {
-    display: none; }
-  .bg-header > .bg-c:before {
-    display: none; }
-
-  .banner {
-    padding: 10px 0 50px 0; }
-    .banner .card-lg {
-      margin-top: 0;
-      margin-left: 0;
-      text-align: right; }
-      .banner .card-lg img {
-        width: 65%; }
-    .banner .card-items {
-      margin-top: -100px;
-      margin-right: 0; }
-      .banner .card-items img {
-        width: 80%; }
-    .banner .banner-text {
-      padding: 0 20px 0 20px; } }
-/********************************************************
 Components SCSS for All Components Fields 
 /********************************************************/
 /********************************************************
@@ -304,14 +115,13 @@ BUTTON
 
 .luci-btn {
   border: none;
-  border-radius: 100px;
+  border-radius: 25px;
   font-size: 14px;
-  padding: 18px 30px;
+  padding: 12px 30px;
   min-width: 175px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all .35s ease;
-  transition: all .35s ease;
-  height: 62px; }
+  transition: all .35s ease; }
   .luci-btn:focus {
     box-shadow: none;
     outline: none; }
@@ -457,69 +267,6 @@ SELECT
 .no-opacity .custom-dropdown.active .dropdown, .no-pointerevents .custom-dropdown.active .dropdown {
   display: block; }
 
-/********************************************************
-Footer SCSS for footer Part 
-/********************************************************/
-/********************************************************
-Footer SCSS  
-/********************************************************/
-footer {
-  background-color: #E3EDF2;
-  padding: 100px 0 50px 0; }
-  footer .copyright-txt {
-    font-size: 14px;
-    display: block;
-    margin: 15px 0 0 0; }
-  footer h4 {
-    color: #222222;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 30px; }
-  footer ul {
-    padding: 0; }
-    footer ul li {
-      list-style-type: none;
-      padding: 0 0 5px 0; }
-      footer ul li a {
-        text-decoration: none;
-        font-size: 16px;
-        color: #333333; }
-        footer ul li a:hover {
-          text-decoration: none;
-          color: #333333;
-          opacity: 0.8; }
-  footer .social-links {
-    margin: 50px 0 0 0;
-    display: flex;
-    justify-content: start; }
-    footer .social-links a:hover {
-      opacity: 0.8; }
-    footer .social-links img {
-      margin-right: 7px;
-      width: 24px; }
-
-/********************************************************/
-/* Max-Width 576PX     **********************************/
-/********************************************************/
-@media (max-width: 992px) {
-  footer {
-    padding: 50px 0 50px 0;
-    text-align: center; }
-    footer .copyright {
-      order: 4; }
-    footer .product {
-      order: 1; }
-    footer .social {
-      margin: 20px 0;
-      order: 3; }
-      footer .social .social-links {
-        margin: 0;
-        justify-content: center; }
-    footer .links {
-      order: 2; }
-    footer h4 {
-      margin-bottom: 20px;
-      margin: 15px 0 10px 0; } }
 /********************************************************
 Animation SCSS for Animatate 
 /********************************************************/
@@ -758,24 +505,6 @@ Kaargar | Components | Animation
   -webkit-animation: animationFramesOne 35s infinite linear;
   animation: animationFramesOne 35s infinite linear; }
 
-.dot-a-a {
-  position: absolute;
-  z-index: -1;
-  top: 82%;
-  right: 88%; }
-
-.dot-a-b {
-  position: absolute;
-  z-index: -1;
-  top: 0%;
-  right: 90%; }
-
-.dot-a-c {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  right: 10%; }
-
 @-webkit-keyframes animationFramesOne {
   0% {
     -webkit-transform: translate(0px, 0px) rotate(0deg); }
@@ -816,69 +545,148 @@ Kaargar | Components | Animation
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-.informative-area {
-  padding-bottom: 80px; }
-  .informative-area h2 {
-    font-size: 40px;
-    font-weight: 700;
+header .navbar-light .navbar-nav .nav-link {
+  color: #222222; }
+  header .navbar-light .navbar-nav .nav-link:hover {
+    color: #222222; }
+  header .navbar-light .navbar-nav .nav-link:focus, header .navbar-light .navbar-nav .nav-link:active {
+    color: #222222; }
+header .navbar-light .navbar-collapse .navbar-nav .nav-link:hover {
+  color: #222222; }
+header .navbar-light .navbar-collapse .navbar-nav .nav-link:focus, header .navbar-light .navbar-collapse .navbar-nav .nav-link:active {
+  color: #222222; }
+header .bg-c {
+  position: relative; }
+  header .bg-c:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Inner/left-top-bg.svg);
+    background-repeat: no-repeat;
+    height: 463px;
     width: 100%;
-    text-align: left; }
-  .informative-area .info-text h4 {
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    margin: 40px 0 10px 0; }
-  .informative-area .info-text p {
-    font-size: 16px;
-    line-height: 25px; }
-  .informative-area .info-text .info-list span {
-    font-weight: 700;
-    margin-bottom: 5px; }
-  .informative-area .info-text .h-2 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 20px 0 10px 0; }
-  .informative-area .info-text h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 20px 0 5px 0; }
-  .informative-area .info-text li {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 5px; }
+    top: 0;
+    left: -110px;
+    background-position: left;
+    right: 0;
+    background-size: auto; }
 
-.z-in9 {
+.form-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 17px 50px rgba(0, 0, 0, 0.1);
+  width: 558px;
+  margin: 0px auto;
+  padding: 30px 50px;
+  margin-bottom: 100px;
+  margin-top: 60px;
   z-index: 9; }
-
-.faq-area .card-header {
-  padding: 0 0 7px 0;
-  background-color: #fff;
-  border-bottom: #fff; }
-  .faq-area .card-header .btn-link {
-    padding-left: 0;
-    position: relative;
-    width: 100%;
-    text-align: left;
-    color: #333333;
-    font-weight: bold;
+  .form-area h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .form-area .form-txt {
+    margin: 10px 22%;
+    text-align: center; }
+  .form-area .or-txt {
     font-size: 16px;
-    line-height: 25px; }
-    .faq-area .card-header .btn-link:hover, .faq-area .card-header .btn-link.focus, .faq-area .card-header .btn-link:focus {
-      text-decoration: none;
-      box-shadow: none; }
-    .faq-area .card-header .btn-link .arrow-toggle {
-      position: absolute;
-      left: auto;
-      right: 0;
-      top: 13px; }
-    .faq-area .card-header .btn-link[aria-expanded="true"] .arrow-toggle {
-      transform: rotate(0deg); }
-    .faq-area .card-header .btn-link[aria-expanded="false"] .arrow-toggle {
-      transform: rotate(180deg); }
-.faq-area .card-body {
-  padding: 0 0 20px 0; }
-.faq-area .card {
-  border: none;
-  border-bottom: 1px solid #E3EDF2 !important; }
+    width: 100%;
+    text-align: center; }
 
-/*# sourceMappingURL=inner.css.map */
+.dot-area .dot-a, .dot-area .dot-b, .dot-area .dot-c, .dot-area .dot-d {
+  z-index: 1; }
+
+footer .bg {
+  position: relative; }
+  footer .bg:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Inner/right-bottom-bg.svg);
+    background-repeat: no-repeat;
+    height: 463px;
+    width: 100%;
+    top: auto;
+    left: auto;
+    background-position: right bottom;
+    right: -115px;
+    background-size: auto;
+    bottom: 0;
+    z-index: 1; }
+
+.password-strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 10px; }
+  .password-strength .s-fill {
+    background: #E2E2EA;
+    height: 2px;
+    padding: 1px 5px;
+    border-radius: 7px;
+    border: 1px solid #E2E2EA;
+    width: 16%; }
+  .password-strength .ps-text {
+    color: #92929D;
+    font-size: 12px; }
+  .password-strength.strong .s-fill {
+    background: #008000;
+    border: 1px solid #008000; }
+  .password-strength.strong .ps-text {
+    color: #008000; }
+  .password-strength.weak .s-fill {
+    background: #ff0000;
+    border: 1px solid #ff0000; }
+  .password-strength.weak .ps-text {
+    color: #ff0000; }
+  .password-strength.medium .s-fill {
+    background: #ffa500;
+    border: 1px solid #ffa500; }
+  .password-strength.medium .ps-text {
+    color: #ffa500; }
+
+@media (max-width: 767px) {
+  header .bg-c:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Inner/left-top-bg.svg);
+    background-repeat: no-repeat;
+    height: 463px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: top left;
+    right: 0;
+    background-size: 60%; }
+
+  footer .bg:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Inner/right-bottom-bg.svg);
+    background-repeat: no-repeat;
+    height: 463px;
+    width: 100%;
+    top: auto;
+    left: auto;
+    background-position: right bottom;
+    right: -15px;
+    background-size: 60%;
+    bottom: 0;
+    z-index: 1; }
+
+  .form-area {
+    width: 90%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    .form-area .form-txt {
+      margin: 10px 4%; }
+
+  .form-group .luci-input {
+    width: 100%;
+    min-width: auto; } }
+
+/*# sourceMappingURL=form.css.map */

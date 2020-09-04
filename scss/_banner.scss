@@ -14,7 +14,7 @@ Banner SCSS
         top: 0;
         left: auto;
         background-position: right;
-        right: -100px;
+        right: 0;
         background-size: 60%;
         z-index: 1;
     }
@@ -28,7 +28,7 @@ Banner SCSS
         top: 90px;
         left: auto;
         background-position: right;
-        right: -100px;
+        right: 0;
         background-size: 45%;
         z-index: 0;
     }
@@ -43,7 +43,55 @@ Banner SCSS
             top: -30px;
             left: auto;
             background-position: right;
-            right: -100px;
+            right: 0;
+            background-size: 28.5%;
+            z-index: 1;
+        }
+    }
+}
+
+.bg-header-b{
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        background-image: url(../images/bg-a.svg);
+        background-repeat: no-repeat;
+        height: 772px;
+        width: 100%;
+        top: 0;
+        left: auto;
+        background-position: right;
+        right: 0;
+        background-size: 60%;
+        z-index: 1;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        background-image: url(../images/bg-b.svg);
+        background-repeat: no-repeat;
+        height: 772px;
+        width: 100%;
+        top: 90px;
+        left: auto;
+        background-position: right;
+        right: 0;
+        background-size: 45%;
+        z-index: 0;
+    }
+    > .bg-c {
+        &:before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/bg-c.svg);
+            background-repeat: no-repeat;
+            height: 772px;
+            width: 100%;
+            top: -30px;
+            left: auto;
+            background-position: right;
+            right: 0;
             background-size: 28.5%;
             z-index: 1;
         }
