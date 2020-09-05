@@ -37,8 +37,7 @@ header{
 /********************************************************/
 @media (max-width: 991px) {
     header{
-       .bg-header{
-           .navbar-collapse{
+       .navbar-collapse{
                position: absolute;
                 width: 60%;
                 right: 7px;
@@ -77,9 +76,8 @@ header{
                 -webkit-box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
                 box-shadow: 0 2px 48px 0 rgba(0,0,0,0.08);
                 .nav-link{
-                    color: $primary-text;
+                    color: $primary-text !important;
                 }
             }
-        }
     }
 }

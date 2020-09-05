@@ -70,37 +70,37 @@ header .navbar-light {
 /* Max-Width 991PX     **********************************/
 /********************************************************/
 @media (max-width: 991px) {
-  header .bg-header .navbar-collapse {
+  header .navbar-collapse {
     position: absolute;
     width: 60%;
     right: 7px;
     top: 60px; }
-    header .bg-header .navbar-collapse .navbar-nav .nav-link:hover {
+    header .navbar-collapse .navbar-nav .nav-link:hover {
       color: #222222; }
-    header .bg-header .navbar-collapse .navbar-nav .nav-link:focus, header .bg-header .navbar-collapse .navbar-nav .nav-link:active {
+    header .navbar-collapse .navbar-nav .nav-link:focus, header .navbar-collapse .navbar-nav .nav-link:active {
       color: #222222; }
-  header .bg-header .navbar-light {
+  header .navbar-light {
     padding: 10px 0 0 10px !important;
     z-index: 2; }
-  header .bg-header .navbar-toggler {
+  header .navbar-toggler {
     padding: 0;
     border: none;
     margin-top: 5px; }
-  header .bg-header .btn-signup {
+  header .btn-signup {
     position: absolute;
     left: auto;
     right: 70px;
     top: 10px; }
-    header .bg-header .btn-signup .luci-btn {
+    header .btn-signup .luci-btn {
       padding: 10px 20px;
       min-width: 130px; }
-  header .bg-header .navbar-nav {
+  header .navbar-nav {
     background: #ffffff;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); }
-    header .bg-header .navbar-nav .nav-link {
-      color: #222222; } }
+    header .navbar-nav .nav-link {
+      color: #222222 !important; } }
 /********************************************************
 Banner SCSS for Header Part 
 /********************************************************/
@@ -118,7 +118,7 @@ Banner SCSS
     width: 100%;
     top: 0;
     left: auto;
-    background-position: right;
+    background-position: right top;
     right: 0;
     background-size: 60%;
     z-index: 1; }
@@ -131,7 +131,7 @@ Banner SCSS
     width: 100%;
     top: 90px;
     left: auto;
-    background-position: right;
+    background-position: right top;
     right: 0;
     background-size: 45%;
     z-index: 0; }
@@ -144,7 +144,7 @@ Banner SCSS
     width: 100%;
     top: -30px;
     left: auto;
-    background-position: right;
+    background-position: right top;
     right: 0;
     background-size: 28.5%;
     z-index: 1; }
@@ -226,7 +226,49 @@ Banner SCSS
   .bg-header > .bg-c:before {
     background-size: 30%;
     right: 0;
-    top: 0; } }
+    top: 0; }
+
+  .bg-header-b {
+    position: relative; }
+    .bg-header-b:before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/bg-a.svg);
+      background-repeat: no-repeat;
+      height: 772px;
+      width: 100%;
+      top: 0;
+      left: auto;
+      background-position: right top;
+      right: 0;
+      background-size: 60%;
+      z-index: 1; }
+    .bg-header-b:after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/bg-b.svg);
+      background-repeat: no-repeat;
+      height: 772px;
+      width: 100%;
+      top: 90px;
+      left: auto;
+      background-position: right top;
+      right: 0;
+      background-size: 45%;
+      z-index: 0; }
+    .bg-header-b > .bg-c:before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/bg-c.svg);
+      background-repeat: no-repeat;
+      height: 772px;
+      width: 100%;
+      top: -30px;
+      left: auto;
+      background-position: right top;
+      right: 0;
+      background-size: 28.5%;
+      z-index: 1; } }
 /********************************************************/
 /* Max-Width 991PX     **********************************/
 /********************************************************/
