@@ -39,9 +39,9 @@ header{
     header{
        .navbar-collapse{
                position: absolute;
-                width: 60%;
+                width: 150px;
                 right: 7px;
-                top: 60px;
+                top: 80px;
              .navbar-nav .nav-link{
                &:hover{
                 color: $primary-text;
@@ -58,7 +58,7 @@ header{
             .navbar-toggler{
                 padding: 0;
                 border: none;
-                margin-top: 5px;
+                margin-top: 20px;
             }
             .btn-signup{
                 position: absolute;

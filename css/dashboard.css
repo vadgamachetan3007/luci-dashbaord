@@ -72,9 +72,9 @@ header .navbar-light {
 @media (max-width: 991px) {
   header .navbar-collapse {
     position: absolute;
-    width: 60%;
+    width: 150px;
     right: 7px;
-    top: 60px; }
+    top: 80px; }
     header .navbar-collapse .navbar-nav .nav-link:hover {
       color: #222222; }
     header .navbar-collapse .navbar-nav .nav-link:focus, header .navbar-collapse .navbar-nav .nav-link:active {
@@ -85,7 +85,7 @@ header .navbar-light {
   header .navbar-toggler {
     padding: 0;
     border: none;
-    margin-top: 5px; }
+    margin-top: 20px; }
   header .btn-signup {
     position: absolute;
     left: auto;

@@ -47,7 +47,9 @@ header{
             }
         }
     }
-    .bg-c{
+}
+
+.bg-form{
         position: relative;
         &:before{
             content: "";
@@ -63,7 +65,6 @@ header{
             background-size: auto;
         }
     }
-}
 
 .form-area{
     display: flex;
@@ -100,23 +101,23 @@ header{
     }
 }
 
-footer .bg{
+.footer-bg{
     position: relative;
     &:before{
-           content: "";
-    position: absolute;
-    background-image: url(../images/Inner/right-bottom-bg.svg);
-    background-repeat: no-repeat;
-    height: 463px;
-    width: 100%;
-    top: auto;
-    left: auto;
-    background-position: right bottom;
-    right: -115px;
-    background-size: auto;
-    bottom: 0;
-    z-index: 1;
-        }
+        content: "";
+        position: absolute;
+        background-image: url(../images/Inner/right-bottom-bg.svg);
+        background-repeat: no-repeat;
+        height: 463px;
+        width: 100%;
+        top: auto;
+        left: auto;
+        background-position: right bottom;
+        right: 0;
+        background-size: auto;
+        bottom: 0;
+        z-index: 1;
+    }
 }
 
 .password-strength{
@@ -169,7 +170,7 @@ footer .bg{
 
 
 @media (max-width: 767px) {
-    header .bg-c:before {
+    .bg-form:before {
         content: "";
         position: absolute;
         background-image: url(../images/Inner/left-top-bg.svg);
@@ -182,7 +183,7 @@ footer .bg{
         right: 0;
         background-size: 60%;
     }
-    footer .bg:before {
+    .footer-bg:before {
         content: "";
         position: absolute;
         background-image: url(../images/Inner/right-bottom-bg.svg);
@@ -202,6 +203,7 @@ footer .bg{
         padding: 20px;
         margin-top: 30px;
         margin-bottom: 50px;
+        z-index: 11;
         .form-txt{
             margin: 10px 4%;
         }
@@ -209,6 +211,9 @@ footer .bg{
     .form-group .luci-input{
         width: 100%;
         min-width: auto;
+    }
+    .bg-form{
+        z-index: 99;
     }
 }
 
